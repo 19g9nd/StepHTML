@@ -1,14 +1,31 @@
+@import "reset.css";
+
 .container {
     min-width: 500px;
     max-width: 1170px;
     margin: 0 auto; /* Центрирование контейнера на странице */
     padding: 20px; /* отступы */
 }
-
-header { grid-area: header; }
-nav { grid-area: menu; }
-main { grid-area: content; }
-footer { grid-area: footer; }
+h1 {
+  font-size: 36px;
+}
+.under_header {
+  font-size: 21px;
+}
+header { 
+  grid-area: header;
+  background-color: #9acd32; 
+  color: #adff2f;
+}
+nav { 
+  grid-area: menu; 
+background-color: #222;
+color: whitesmoke;
+}
+main { grid-area: content; 
+background-color: bisque;}
+footer { grid-area: footer; 
+background-color: bisque;}
 
 .grid-container {
     grid-template-columns: repeat(6,1fr);
@@ -18,13 +35,15 @@ footer { grid-area: footer; }
     'menu menu menu menu menu menu'
     'header header header header header header'
     'content content content content content content'
+    'content content content content content content'
+    'content content content content content content'
     'footer footer footer footer footer footer';
   gap: 10px;
   padding: 10px;
 }
 
 .grid-container > * {
-  background-color: rgba(66, 155, 78, 0.8);
+
   text-align: center;
   padding: 20px 0;
   font-size: 50px;
