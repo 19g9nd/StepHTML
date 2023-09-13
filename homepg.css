@@ -1,0 +1,13 @@
+.container {
+    min-width: 500px;
+    max-width: 1170px;
+    margin: 0 auto; /* Центрирование контейнера на странице */
+    padding: 20px; /* отступы */
+}
+
+/* адаптивный стиль для мобильных устройств */
+@media screen and (max-width: 767px) {
+    .container {
+        padding: 10px;
+    }
+}
