@@ -1,58 +1,85 @@
 @import "reset.css";
+body {
+  /* min-width: 500px;
+  max-width: 1170px; */
+  color: #959595;
+  font-size: 14px;
+  background-color: #fff;
+}
 
 .container {
-    min-width: 500px;
-    max-width: 1170px;
-    margin: 0 auto; /* Центрирование контейнера на странице */
-    padding: 20px; /* отступы */
+  padding: 20px;
 }
-h1 {
+
+.jumbotron {
+  background-color: #9acd32;
+  color: #adff2f;
+  padding: 20px;
+  text-align: center;
+}
+
+.jumbotron h1 {
   font-size: 36px;
 }
-.under_header {
+
+.jumbotron p {
   font-size: 21px;
 }
-header { 
+
+.jumbotron a.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.jumbotron a.btn:hover {
+  background-color: #0056b3;
+}
+
+header {
   grid-area: header;
-  background-color: #9acd32; 
-  color: #adff2f;
+  padding: 20px;
+  font-size: 24px;
 }
-nav { 
-  grid-area: menu; 
-background-color: #222;
-color: whitesmoke;
+nav {
+  grid-area: menu;
+  background-color: #222;
+  padding: 20px;
+  font-size: 18px;
 }
-main { grid-area: content; 
-background-color: bisque;}
-footer { grid-area: footer; 
-background-color: bisque;}
+
+main {
+  grid-area: content;
+}
+
+footer {
+  grid-area: footer;
+  padding: 20px;
+  font-size: 18px;
+}
 
 .grid-container {
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6,1fr) ;
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    'menu menu menu menu menu menu'
-    'header header header header header header'
-    'content content content content content content'
-    'content content content content content content'
-    'content content content content content content'
-    'footer footer footer footer footer footer';
-  gap: 10px;
-  padding: 10px;
+    'menu'
+    'jumbotron'
+    'header'
+    'content'
+    'footer';
 }
 
 .grid-container > * {
-
   text-align: center;
-  padding: 20px 0;
-  font-size: 50px;
+  font-size: 18px;
 }
 
-
-/* адаптивный стиль для мобильных устройств */
 @media screen and (max-width: 767px) {
-    .container {
-        padding: 10px;
-    }
+  .container {
+    padding: 10px;
+  }
 }
