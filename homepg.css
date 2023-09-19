@@ -55,7 +55,12 @@ nav {
 main {
   grid-area: content;
 }
-
+.pre-footer{
+  grid-area: pre-footer;
+  padding: 30px 0;
+  background-color: #daa520;
+  color: #000;
+}
 footer {
   grid-area: footer;
   padding: 20px;
@@ -70,6 +75,7 @@ footer {
     'jumbotron'
     'header'
     'content'
+    'pre-footer'
     'footer';
 }
 
