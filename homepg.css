@@ -1,32 +1,68 @@
 @import "reset.css";
 body {
-  /* min-width: 500px;
-  max-width: 1170px; */
+  min-width: 500px;
+  max-width: 1170px;
   color: #959595;
   font-size: 14px;
   background-color: #fff;
 }
+/* Стили для больших экранов */
+@media screen and (min-width: 780px) {
+  main {
+    display: flex;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  article {
+    flex: 0 0 calc(33.333% - 20px); /* Распределяем статьи на 3 колонки с отступами между ними */
+    margin-right: 20px;
+  }
 
+  /* Убираем маргин справа у последней статьи */
+  article:last-child {
+    margin-right: 0;
+  }
+}
+
+
+
+ 
 .container {
   padding: 20px;
 }
+.div700x300 {
+   
+  height: 300px;
+  background-color: #ededed;
+  border-radius: 6px;
+}
 
-.jumbotron {
+.div700x300 p {
+  line-height:300px;
+  font-weight: bold;
+  color: #ababab;
+  font-size: 25px;
+}
+
+.green {
+  height: 338px;
   background-color: #9acd32;
   color: #adff2f;
   padding: 20px;
   text-align: center;
 }
 
-.jumbotron h1 {
+.green h1 {
   font-size: 36px;
 }
 
-.jumbotron p {
+.green p {
   font-size: 21px;
 }
 
-.jumbotron a.btn {
+.green a.btn {
   background-color: #007bff;
   color: #fff;
   padding: 10px 20px;
@@ -36,7 +72,7 @@ body {
   transition: background-color 0.3s ease;
 }
 
-.jumbotron a.btn:hover {
+.green a.btn:hover {
   background-color: #0056b3;
 }
 
@@ -54,6 +90,11 @@ nav {
 
 main {
   grid-area: content;
+  justify-content: center;
+  align-items: center;
+  align-items: stretch; /* Растягиваем статьи по вертикали */
+  padding: 0 50px; /* Отступы по краям контейнера */
+  /* box-sizing: border-box; отступы внутри ширины контейнера */
 }
 .pre-footer{
   grid-area: pre-footer;
@@ -61,12 +102,21 @@ main {
   background-color: #daa520;
   color: #000;
 }
+.Superior{
+  color: #000;
+}
+.Visualize{
+  color: #777;
+}
 footer {
   grid-area: footer;
   padding: 20px;
   font-size: 18px;
 }
-
+.main-img{
+  width: 700px; 
+  height: 300px;
+}
 .grid-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -84,8 +134,3 @@ footer {
   font-size: 18px;
 }
 
-@media screen and (max-width: 767px) {
-  .container {
-    padding: 10px;
-  }
-}
