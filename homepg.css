@@ -1,7 +1,8 @@
 @import "reset.css";
+@import url(nav.css);
 body {
-  min-width: 500px;
-  max-width: 1170px;
+  /* min-width: 500px;
+  max-width: 1170px; */
   color: #959595;
   font-size: 14px;
   background-color: #fff;
@@ -14,6 +15,7 @@ body {
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    padding-bottom: 30px;
   }
   article {
     flex: 0 0 calc(33.333% - 20px); /* Распределяем статьи на 3 колонки с отступами между ними */
@@ -27,7 +29,9 @@ body {
 }
 
 
-
+body{
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
  
 .container {
   padding: 20px;
@@ -61,6 +65,7 @@ body {
 .green p {
   font-size: 21px;
 }
+
 
 .green a.btn {
   background-color: #007bff;
@@ -98,9 +103,14 @@ main {
 }
 .pre-footer{
   grid-area: pre-footer;
-  padding: 30px 0;
   background-color: #daa520;
   color: #000;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 12vw;
 }
 .Superior{
   color: #000;
@@ -112,6 +122,17 @@ footer {
   grid-area: footer;
   padding: 20px;
   font-size: 18px;
+  height: 120px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  font-size: 14px;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 .main-img{
   width: 700px; 
@@ -133,4 +154,66 @@ footer {
   text-align: center;
   font-size: 18px;
 }
+
+
+.div100x100 {
+  height: 100px;
+  width: 100px;
+  background-color: #ededed;
+  border-radius: 50px;
+}
+
+.div-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.div-form:nth-child(1) {
+  margin-right: 60px;
+}
+
+.div-form:nth-child(3) {
+  margin-left: 60px;
+}
+
+.div-form p:nth-child(2) {
+  width: 300px;
+  font-size: 24px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.div-form p:nth-child(3) {
+  font-size: 14px;
+  width: 330px;
+  line-height: 1.42857143;
+}
+
+.div-form a {
+  padding: 6px 12px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.div-form a:hover {
+  background-color: #ececec;
+}
+
+.div100x100 p {
+  font-weight: bold;
+  color: #ababab;
+  font-size: 13px;
+  line-height: 100px;
+}
+
 

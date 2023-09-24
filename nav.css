@@ -1,0 +1,144 @@
+/* Стили для логотипа и текста "logo" */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: auto; 
+    height: 25px;
+    margin-right: 10px; /*  отступ между логотипом и текстом "logo" */
+}
+
+
+.logo span {
+    font-size: 18px; /*  нужный размер шрифта для текста "logo" */
+    font-weight: bold;
+    color: #fff; /* Цвет текста */
+}
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+  padding-top: 49px;
+  padding-bottom: 20px;
+}
+
+nav input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 17px;
+  background-color: #fff;
+  width: 200px;
+  margin-right: 8px;
+}
+
+nav button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+/*  кнопка поиска белой по умолчанию и при наведении */
+nav button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+nav {
+    grid-area: menu;
+    background-color: #222;
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+  .page-navigation-links {
+    margin-left: 50px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .page-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 14px 17px 14px;
+    font-size: 0.9rem;
+  }
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    color: #fff;
+    text-decoration: none;
+    padding: 17px 14px 17px 14px;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.dropdown-menu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+  
+  /* бургер-меню при наведении на Services */
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Стили для стрелочки (caret) */
+  .caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+  
+  /* Стили для "прилипающего" меню */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100; /*  меню находится поверх остального контента */
+    background-color: #222; /* Цвет фона меню */
+    transition: top 0.3s; /* Плавное появление и исчезновение */
+  }
+  
+  .sticky.stuck {
+    top: 0; /* Меню "прилипает" к верху страницы */
+  }
+  
