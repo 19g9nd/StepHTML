@@ -23,7 +23,11 @@
     align-items: center; 
 
 }
-
+.page-link.active {
+  background-color: #080808; /* Цвет для активной ссылки */
+  color: #fff;
+  font-weight: bold; /* Жирный шрифт для активной ссылки */
+}
 nav input[type="text"] {
   padding: 8px;
   border: 1px solid #ccc;
@@ -38,12 +42,10 @@ nav input[type="text"] {
 nav button {
   background-color: #fff;
   color: #000;
-  border: none;
+  border: 1px solid black;
   border-radius: 4px;
   padding: 8px 16px;
   cursor: pointer;
-  font-weight: bold;
-  margin-top: 8px;
 }
 
 .search-container {

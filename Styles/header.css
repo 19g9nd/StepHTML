@@ -27,17 +27,17 @@ header {
     font-size: 14px;
   }
   .green h1 {
-    font-size: 3vw; 
+    font-size: 4vw; 
     margin-top: 5%;
   }
   
   .green p {
-    font-size: 1.5vw; 
+    font-size: 2vw; 
     margin-bottom: 1%; 
   }
   
   .green a.btn {
-    font-size: 0.8vw; 
+    font-size: 1vw; 
    line-height: 2em;
    color: #fff;
    background-color: #337ab7;
