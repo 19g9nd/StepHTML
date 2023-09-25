@@ -11,17 +11,16 @@
 }
 
 
-.logo span {
-    font-size: 18px; /*  нужный размер шрифта для текста "logo" */
-    font-weight: bold;
-    color: #fff; /* Цвет текста */
+
+.logo:hover {
+  color: white;
 }
+
 .nav-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center; 
-  padding-top: 49px;
-  padding-bottom: 20px;
+
 }
 
 nav input[type="text"] {
@@ -32,6 +31,7 @@ nav input[type="text"] {
   background-color: #fff;
   width: 200px;
   margin-right: 8px;
+  
 }
 
 nav button {
@@ -59,13 +59,25 @@ nav button:hover {
 
 nav {
     grid-area: menu;
-    background-color: #222;
     padding: 20px;
     font-size: 18px;
+    top: 0;
+    width: 100%;
+    grid-area: header;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    z-index: 100; /*  меню находится поверх остального контента */
+    background-color: #222; /* Цвет фона меню */
   }
   
   .page-navigation-links {
-    margin-left: 50px;
     list-style: none;
     padding: 0;
     display: flex;
@@ -109,12 +121,12 @@ nav {
     padding: 10px;
 }
 
-  
-  /* бургер-меню при наведении на Services */
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
+    /* бургер-меню при наведении на Services */
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+    
+
   /* Стили для стрелочки (caret) */
   .caret {
     display: inline-block;
@@ -128,17 +140,6 @@ nav {
     border-left: 4px solid transparent;
   }
   
-  /* Стили для "прилипающего" меню */
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100; /*  меню находится поверх остального контента */
-    background-color: #222; /* Цвет фона меню */
-    transition: top 0.3s; /* Плавное появление и исчезновение */
-  }
+ 
   
-  .sticky.stuck {
-    top: 0; /* Меню "прилипает" к верху страницы */
-  }
-  
+ 

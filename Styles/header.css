@@ -1,0 +1,56 @@
+header {
+    grid-area: header;
+    font-size: 24px;
+    padding: 20px; /* Размер отступов, как и у main */
+    width: 65%; /* ширинa равнa ширине main */
+    margin: 0 auto; 
+  }
+  
+.green {
+    height: auto;
+    color: var(--green-color);
+    background-color: var(--green-background-color);
+    padding: 3% 10%;
+   
+  }
+  
+.Superior{
+    color: #000;
+  }
+.Visualize{
+    color: #777;
+     font-size: 23px;
+  }
+  
+.under-headerText {
+
+    font-size: 14px;
+  }
+  .green h1 {
+    font-size: 3vw; 
+    margin-top: 5%;
+  }
+  
+  .green p {
+    font-size: 1.5vw; 
+    margin-bottom: 1%; 
+  }
+  
+  .green a.btn {
+    font-size: 0.8vw; 
+   line-height: 2em;
+   color: #fff;
+   background-color: #337ab7;
+   border-color: #2e6da4;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 0.5px solid #000000;
+    
+    transition: background-color 0.3s ease;
+  }
+  
+  .green a.btn:hover {
+    background-color: #0056b3;
+  }
